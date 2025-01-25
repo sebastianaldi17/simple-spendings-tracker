@@ -36,11 +36,14 @@ Run `npm run build-android` and wait for the APK link to be done. APK file is ho
 - Separate spendings collection by authenticated user
 
 ## Screenshots
-![homepage](screenshots/main.jpeg)
+<img src="screenshots/main.jpeg" width=200/>
+
 *Home page*
 
-![new spending](screenshots/new-spending.jpeg)
+<img src="screenshots/new-spending.jpeg" width=200/>
+
 *New spending page*
 
-![edit spending](screenshots/edit-spending.jpeg)
+<img src="screenshots/edit-spending.jpeg" width=200/>
+
 *Edit spending page*
