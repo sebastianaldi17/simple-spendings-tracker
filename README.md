@@ -1,50 +1,46 @@
-# Welcome to your Expo app 👋
+# simple-spendings-tracker
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Simple spendings app made using [expo](https://www.expo.dev), made for my mother to track the family's monthly spending. Spendings data is stored using Google's Firestore.
 
-## Get started
+Made for Android phone, so the information here may not be relevant for web or iOS development.
 
-1. Install dependencies
+App icon is sourced from [freepik](https://www.freepik.com/icon/budget_781760).
+
+## Setup
+
+1. Download Expo Go on the play store, or install Android Studio and then configure emulators and SDKs.
+
+2. Install dependencies
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Change Firebase credentials in `firebaseConfig.js` (and make sure Firestore & auth is enabled in the Firebase project)
+
+4. Start the app
 
    ```bash
     npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Building APK
+Run `npm run build-android` and wait for the APK link to be done. APK file is hosted by expo.dev, but the link is not permanent.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## To-Do
+- Infinite scroll instead of loading all spendings for a certain month
+- Style the app better
+- Implement dark mode
+- Implement context for auth information
+- Implement Google SSO
+- Separate spendings collection by authenticated user
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Screenshots
+![homepage](screenshots/main.jpeg)
+*Home page*
 
-## Get a fresh project
+![new spending](screenshots/new-spending.jpeg)
+*New spending page*
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+![edit spending](screenshots/edit-spending.jpeg)
+*Edit spending page*

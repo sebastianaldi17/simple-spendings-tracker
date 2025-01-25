@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "simple-spendings-tracker",
+    "name": "Pengeluaran Bulanan",
     "slug": "simple-spendings-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sebastianaldi17.simplespendingstracker"
     },
     "web": {
       "bundler": "metro",
@@ -32,11 +33,18 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ],
-      "expo-sqlite"
+      ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "eb7421ce-2566-4bb1-b2fe-2a86abe45216"
+      }
     }
   }
 }
