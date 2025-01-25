@@ -37,10 +37,13 @@ Run `npm run build-android` and wait for the APK link to be done. APK file is ho
 
 ## Screenshots
 ![homepage](screenshots/main.jpeg)
+
 *Home page*
 
 ![new spending](screenshots/new-spending.jpeg)
+
 *New spending page*
 
 ![edit spending](screenshots/edit-spending.jpeg)
+
 *Edit spending page*
